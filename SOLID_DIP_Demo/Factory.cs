@@ -15,7 +15,7 @@ namespace SOLID_DIP_Demo
 
         public static IChore CreateChore() 
         { 
-            return new Chore(); 
+            return new Chore(CreateLogger(), CreateMessageSender()); 
         }
 
         public static ILogger CreateLogger() 
@@ -27,5 +27,10 @@ namespace SOLID_DIP_Demo
         {
             return new Emailer();
         }
+
+        //public static IMessageSender CreateMessageSender()
+        //{
+        //    return new Texter();
+        //}
     }
 }

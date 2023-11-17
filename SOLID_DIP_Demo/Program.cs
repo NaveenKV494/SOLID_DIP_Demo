@@ -10,7 +10,7 @@ namespace SOLID_DIP_Demo
     {
         static void Main(string[] args)
         {
-            Person owner = new Person
+            IPerson owner = new Person
             {
                 FirstName = "naveen",
                 LastName = "kumar",

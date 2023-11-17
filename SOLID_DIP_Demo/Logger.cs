@@ -10,7 +10,7 @@ namespace SOLID_DIP_Demo
     {
         public void Log(string message)
         {
-            Console.WriteLine($"Write to Console: {message}");
+            Console.WriteLine($"{message}");
         }
     }
 }

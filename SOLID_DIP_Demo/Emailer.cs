@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLID_DIP_Demo
 {
-    public class Emailer
+    public class Emailer : IMessageSender
     {
-        public void SendEmail(IPerson person, string message)
+        public void SendMessage(IPerson person, string message)
         {
             Console.WriteLine($"Sending an email to {person.EmailAddress}");
         }

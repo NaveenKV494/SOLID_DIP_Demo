@@ -18,5 +18,14 @@ namespace SOLID_DIP_Demo
             return new Chore(); 
         }
 
+        public static ILogger CreateLogger() 
+        {
+            return new Logger();
+        }
+
+        public static IMessageSender CreateMessageSender() 
+        {
+            return new Emailer();
+        }
     }
 }
